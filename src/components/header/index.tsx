@@ -1,30 +1,28 @@
 import React, { useState } from "react";
-import { user5, cart1, menu, search } from "../../assets/svg";
+import { cart1, menu, search } from "../../assets/svg";
 import Container from "../container";
 import Search from "../search";
 import useResize from "../../hooks/useResize";
 
 // styled
-import { WrapperRegister, WrapperHeader } from "./Header.styles";
+import { WrapperHeader } from "./Header.styles";
+import NavBar from "../navbar";
+import RegisterContainer from "../register-container";
 
 const Header = () => {
   const [showSearch, setShowSearch] = useState<boolean>(false);
+  const [hideMenu, setHideMenu] = useState<boolean>(false);
   const { width } = useResize();
-
+  console.log(hideMenu);
   return (
     <div>
       <div style={{ background: "#e6e2e2" }}>
-        <WrapperRegister showSearch={showSearch}>
-          <p>
-            <img src={user5} alt="user" /> <span className="register">CREAR CUENTA</span> -
-            <span className="login"> INICIAR SESIÓN</span>
-          </p>
-        </WrapperRegister>
+        <RegisterContainer showSearch={showSearch} />
       </div>
       <Container>
         <WrapperHeader showSearch={showSearch}>
           <div className="menu">
-            <button onClick={() => console.log("opening menu")} className="btn-menu">
+            <button onClick={() => setHideMenu(true)} className="btn-menu">
               <img src={menu} alt="menu" />
             </button>
           </div>
@@ -48,6 +46,7 @@ const Header = () => {
             </div>
           </div>
         </WrapperHeader>
+        <NavBar hideMenu={hideMenu} setHideMenu={setHideMenu} />
       </Container>
     </div>
   );
