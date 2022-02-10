@@ -5,13 +5,16 @@ import Home from "./pages/home";
 import { GlobalStyle } from "./global-styles";
 import theme from "./config/theme";
 import { ThemeProvider } from "styled-components";
+import { AuthProvider } from "./context/authProvider";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Home />
-    </ThemeProvider>
+    <AuthProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Home />
+      </ThemeProvider>
+    </AuthProvider>
   );
 }
 

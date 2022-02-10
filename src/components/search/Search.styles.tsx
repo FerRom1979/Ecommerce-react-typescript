@@ -31,6 +31,10 @@ export const WrapperSearch = styled.div<PropsSearch>`
   }
   .arrow-rigth {
     display: block;
+    cursor: pointer;
+  }
+  .icon-search {
+    cursor: pointer;
   }
 
   @media (min-width: 790px) {

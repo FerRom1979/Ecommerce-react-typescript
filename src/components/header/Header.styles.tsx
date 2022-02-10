@@ -77,10 +77,12 @@ export const WrapperHeader = styled.div<Props>`
   .icon-search {
     display: block;
     order: 1;
+    cursor: pointer;
   }
   .icon-search button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
   @media (min-width: 430px) {
     h1 {

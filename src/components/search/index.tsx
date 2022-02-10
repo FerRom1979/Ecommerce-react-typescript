@@ -21,7 +21,7 @@ const Search = ({ setShowSearch, showSearch }: SearchProps) => {
         <img src={arrowRigth} alt="arrow rigth" />
       </button>
       <input type="text" placeholder="¿Qué estás buscando?" />
-      <button onClick={() => console.log("searching...")}>
+      <button className="icon-search" onClick={() => console.log("searching...")}>
         <img src={search} alt="search" />
       </button>
     </WrapperSearch>
