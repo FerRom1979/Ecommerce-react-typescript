@@ -11,19 +11,18 @@ import "firebase/firestore";
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCZpGdVVrcpftIk6EmAk-xG3dA8HuZLwIs",
+  apiKey: "AIzaSyAz83WjT3ni8PrbBzo6os2UlGw_k5zCUXE",
 
-  authDomain: "react-fb-auth-9192e.firebaseapp.com",
+  authDomain: "padel-world-store.firebaseapp.com",
 
-  projectId: "react-fb-auth-9192e",
+  projectId: "padel-world-store",
 
-  storageBucket: "react-fb-auth-9192e.appspot.com",
+  storageBucket: "padel-world-store.appspot.com",
 
-  messagingSenderId: "270006359092",
+  messagingSenderId: "629852112945",
 
-  appId: "1:270006359092:web:e700f43857a1f4f9196661",
+  appId: "1:629852112945:web:fae10616bd090ac619ad10",
 };
-
 // Initialize Firebase
 
 export const app = initializeApp(firebaseConfig);
