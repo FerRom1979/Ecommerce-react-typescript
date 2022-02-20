@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import RegisterContainer from "../register-container";
 
 // styles
 type NavbarProps = {
@@ -93,6 +94,7 @@ const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
           </ul>
         </li>
       </ul>
+      <RegisterContainer />
     </WrapperNavbar>
   );
 };
