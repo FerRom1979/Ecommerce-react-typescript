@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { password } from "../../assets/svg";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
 import { useHandleGoogleSignin } from "../../utils/signin-with-google";
 import Container from "../container";
+import swal from "sweetalert";
+import { User } from "./types";
+import Input from "../form/input/Input";
 
 //styles
 import { WrapperForm } from "./Login.styles";
-
-type User = {
-  email?: string;
-  password?: string;
-  target?: any;
-};
 
 const Login = () => {
   const { login }: any = useAuth();
@@ -27,18 +23,20 @@ const Login = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
     try {
       setError(false);
       await login(user?.email, user?.password);
       navigate("/");
     } catch (err) {
-      if (err) setError(true);
+      if (err)
+        swal({
+          text: "Wrong email or password!!!",
+          icon: "error",
+          timer: 2000,
+        });
     }
     e.target.reset();
   };
-
-  console.log(error);
 
   return (
     <Container>
@@ -48,16 +46,27 @@ const Login = () => {
           <button onClick={() => handleGoogleSignin()}>Google Login</button>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="content-input">
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" onChange={handleChange} />
-          </div>
-          <div className="content-input">
-            <label htmlFor="password">Contraseña</label>
-            <input type="password" name="password" id="password" onChange={handleChange} />
-            <img src={password} alt="show password" />
-          </div>
+          <Input
+            type="email"
+            name="email"
+            label="Email"
+            id="email"
+            handleChange={handleChange}
+            required
+          />
+          <Input
+            type="password"
+            name="password"
+            label="Contraseña"
+            id="password"
+            handleChange={handleChange}
+            required
+          />
           <p>¿Olvidaste tu contraseña?</p>
+          <Link to={"/register"}>
+            <p>Aun no tenes cuenta.</p>
+          </Link>
+
           <div className="wrapper-btn">
             <button type="submit">INICIAR SESIÓN</button>
           </div>

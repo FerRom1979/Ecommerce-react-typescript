@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import theme from "../../config/theme";
+import { StylesRegisterProps } from "./types";
 
-type Props = {
-  showSearch?: boolean;
-};
-
-export const WrapperRegister = styled.div<Props>`
+export const WrapperRegister = styled.div<StylesRegisterProps>`
   display: flex;
   justify-content: flex-end;
   align-items: baseline;

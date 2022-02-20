@@ -1,14 +1,9 @@
 import React from "react";
 import { search, arrowRigth } from "../../assets/svg";
+import { SearchProps } from "./types";
 
 // styles
 import { WrapperSearch } from "./Search.styles";
-
-//types
-type SearchProps = {
-  setShowSearch?: React.Dispatch<React.SetStateAction<boolean>>;
-  showSearch?: boolean;
-};
 
 const Search = ({ setShowSearch, showSearch }: SearchProps) => {
   return (

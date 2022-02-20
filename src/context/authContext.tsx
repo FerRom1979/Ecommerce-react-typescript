@@ -47,7 +47,6 @@ export const AuthProvider = ({ children }: AuthContextProps) => {
       setLoading(false);
     });
   }, []);
-  console.log(user);
 
   return (
     <AuthContext.Provider

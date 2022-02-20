@@ -13,11 +13,11 @@ const Header = () => {
   const [showSearch, setShowSearch] = useState<boolean>(false);
   const [hideMenu, setHideMenu] = useState<boolean>(false);
   const { width } = useResize();
-  console.log(hideMenu);
+
   return (
     <div>
       <div style={{ background: "#e6e2e2" }}>
-        <RegisterContainer showSearch={showSearch} />
+        {width > 789 && <RegisterContainer showSearch={showSearch} />}
       </div>
       <Container>
         <WrapperHeader showSearch={showSearch}>

@@ -1,15 +1,11 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import { user5 } from "../../assets/svg";
-
-//types
-type RegisterContainerProps = {
-  showSearch?: boolean;
-};
+import { useAuth } from "../../context/authContext";
+import { RegisterContainerProps } from "./types";
 
 // styles
 import { WrapperRegister } from "./RegisterContainer.styles";
-import { useAuth } from "../../context/authContext";
 
 const RegisterContainer: FC<RegisterContainerProps> = ({ showSearch }) => {
   const { logout }: any = useAuth();

@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import theme from "../../config/theme";
+import { StylesSearchProps } from "./types";
 
-type PropsSearch = {
-  showSearch?: boolean;
-};
-
-export const WrapperSearch = styled.div<PropsSearch>`
+export const WrapperSearch = styled.div<StylesSearchProps>`
   display: flex;
   position: fixed;
   top: 0;
