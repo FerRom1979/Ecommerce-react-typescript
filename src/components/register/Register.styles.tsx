@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const WrapperForm = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  max-width: 600px;
+  margin: auto;
+
   h2 {
     text-align: center;
     font-weight: 300;
@@ -43,5 +44,11 @@ export const WrapperForm = styled.div`
     position: relative;
     bottom: 28px;
     left: 330px;
+  }
+  .wrapper-password {
+    width: min-content;
+    position: relative;
+    bottom: 42px;
+    left: 90%;
   }
 `;

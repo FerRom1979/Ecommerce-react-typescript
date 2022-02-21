@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
-import { useHandleGoogleSignin } from "../../utils/signin-with-google";
 import Container from "../container";
 import swal from "sweetalert";
 import { User } from "./types";
@@ -9,16 +8,24 @@ import Input from "../form/input/Input";
 
 //styles
 import { WrapperForm } from "./Login.styles";
+import ButtonGoogle from "../button-google";
+import ButtonComponent from "../button";
+import { validateError } from "./validateForm";
+import Message from "../form/message";
 
 const Login = () => {
   const { login }: any = useAuth();
-  const { handleGoogleSignin } = useHandleGoogleSignin();
-  const [user, setUser] = useState<User>();
+  const [user, setUser] = useState<User>({ email: "", password: "" });
   const [error, setError] = useState<boolean>(false);
+  const [formError, setFormError] = useState<User>();
   const navigate = useNavigate();
 
   const handleChange = (e: User) => {
     setUser({ ...user, [e.target.name]: e.target.value });
+  };
+  const handleBlur = (e: User) => {
+    handleChange(e);
+    setFormError(validateError(user));
   };
 
   const handleSubmit = async (e: any) => {
@@ -42,9 +49,7 @@ const Login = () => {
     <Container>
       <WrapperForm>
         <h2>Iniciar sesión</h2>
-        <div className="wrapper-btn">
-          <button onClick={() => handleGoogleSignin()}>Google Login</button>
-        </div>
+        <ButtonGoogle />
         <form onSubmit={handleSubmit}>
           <Input
             type="email"
@@ -53,7 +58,9 @@ const Login = () => {
             id="email"
             handleChange={handleChange}
             required
+            onBlur={handleBlur}
           />
+          {formError?.email && <Message msg={formError.email} className="error" />}
           <Input
             type="password"
             name="password"
@@ -61,15 +68,16 @@ const Login = () => {
             id="password"
             handleChange={handleChange}
             required
+            onBlur={handleBlur}
           />
+          {formError?.password && <Message msg={formError.password} className="error" />}
           <p>¿Olvidaste tu contraseña?</p>
           <Link to={"/register"}>
             <p>Aun no tenes cuenta.</p>
           </Link>
-
-          <div className="wrapper-btn">
-            <button type="submit">INICIAR SESIÓN</button>
-          </div>
+          <ButtonComponent type="submit" className="btn-lg">
+            INICIAR SESIÓN
+          </ButtonComponent>
         </form>
       </WrapperForm>
     </Container>

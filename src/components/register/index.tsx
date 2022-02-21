@@ -2,27 +2,28 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
 import Container from "../container";
-import { useHandleGoogleSignin } from "../../utils/signin-with-google";
 import Input from "../form/input/Input";
 import Message from "../form/message";
 import { User } from "./types";
 import { initialStateRegister } from "../../constants/imitial-values-register";
 import { validateError } from "./validateForm";
+import ButtonComponent from "../button";
+import { password } from "../../assets/svg";
 
 //styles
 import { WrapperForm } from "./Register.styles";
+import ButtonGoogle from "../button-google";
 
 const Register = () => {
-  const { handleGoogleSignin } = useHandleGoogleSignin();
   const { signup }: any = useAuth();
   const [user, setUser] = useState<User>(initialStateRegister);
   const [error, setError] = useState<boolean>(false);
   const [formError, setFormError] = useState<User>();
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   const navigate = useNavigate();
 
   const handleChange = (e: User) => {
     const { name, value } = e.target;
-
     setUser({ ...user, [name]: value });
   };
 
@@ -33,7 +34,6 @@ const Register = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
     try {
       setError(false);
       await signup(user?.email, user?.password);
@@ -41,7 +41,6 @@ const Register = () => {
     } catch (err) {
       if (err) setError(true);
     }
-
     e.target.reset();
   };
 
@@ -49,11 +48,7 @@ const Register = () => {
     <Container>
       <WrapperForm>
         <h2>Crear Cuenta</h2>
-
-        <div className="wrapper-btn">
-          <button onClick={() => handleGoogleSignin()}>Google Login</button>
-        </div>
-
+        <ButtonGoogle />
         <form onSubmit={handleSubmit}>
           <Input
             type="name"
@@ -91,19 +86,32 @@ const Register = () => {
             name="password"
             id="password"
             label="Contraseña"
+            placeholder="********"
             handleChange={handleChange}
             required
             onBlur={handleBlur}
-          />
+            showPassword={showPassword}
+          >
+            <div className="wrapper-password ">
+              <ButtonComponent
+                className="btn-icon"
+                onClick={() => setShowPassword((prev) => !prev)}
+              >
+                <img src={password} alt="password" />
+              </ButtonComponent>
+            </div>
+          </Input>
           {formError?.password && <Message msg={formError.password} className="error" />}
           <Input
             type="password"
             name="confirmPassword"
             id="confirmPassword"
             label="Confirmar Contraseña"
+            placeholder="********"
             handleChange={handleChange}
             required
             onBlur={handleBlur}
+            showPassword={showPassword}
           />
           {formError?.confirmPassword && (
             <Message msg={formError.confirmPassword} className="error" />
@@ -111,7 +119,9 @@ const Register = () => {
           <Link to={"/login"}>
             <p>Ya tenes cuenta.</p>
           </Link>
-          <button type="submit">ENVIAR</button>
+          <ButtonComponent className="btn-lg" type="submit">
+            Enviar
+          </ButtonComponent>
         </form>
       </WrapperForm>
     </Container>

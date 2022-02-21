@@ -12,13 +12,15 @@ const Input = ({
   handleChange,
   error,
   onBlur,
+  children,
+  showPassword,
   ...rest
 }: InputProps) => {
   return (
     <Wrapper error={error}>
       <label htmlFor={name}>{label}</label>
       <input
-        type={type}
+        type={showPassword ? "text" : type}
         name={name}
         onChange={handleChange}
         {...rest}
@@ -26,6 +28,7 @@ const Input = ({
         required={required}
         className={error ? "error" : ""}
       />
+      {children}
     </Wrapper>
   );
 };

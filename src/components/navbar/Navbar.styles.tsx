@@ -1,8 +1,6 @@
 import styled from "styled-components";
+import { NavbarPropsStyles } from "./types";
 
-type NavbarPropsStyles = {
-  hideMenu?: boolean;
-};
 export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
   width: 80%;
   background-color: #0095ff;
@@ -16,7 +14,6 @@ export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
   }
   .btn-close {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     padding: 5px;
     button {
@@ -51,5 +48,10 @@ export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
   }
   .menu-paddles {
     display: none;
+  }
+  @media (max-width: 790px) {
+    .wrapper-register {
+      margin-left: -80%;
+    }
   }
 `;
