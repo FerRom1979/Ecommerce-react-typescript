@@ -3,11 +3,12 @@ import { cart1, menu, search } from "../../assets/svg";
 import Container from "../container";
 import Search from "../search";
 import useResize from "../../hooks/useResize";
+import NavBar from "../navbar";
+import RegisterContainer from "../register-container";
+import { Link } from "react-router-dom";
 
 // styled
 import { WrapperHeader } from "./Header.styles";
-import NavBar from "../navbar";
-import RegisterContainer from "../register-container";
 
 const Header = () => {
   const [showSearch, setShowSearch] = useState<boolean>(false);
@@ -26,7 +27,10 @@ const Header = () => {
               <img src={menu} alt="menu" />
             </button>
           </div>
-          <h1>Padel World Store</h1>
+          <Link to={"/"} style={{ textDecoration: "none", order: 2 }}>
+            <h1>Padel World Store</h1>
+          </Link>
+
           {(showSearch || width > 789) && (
             <Search setShowSearch={setShowSearch} showSearch={showSearch} />
           )}

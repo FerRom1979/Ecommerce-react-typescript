@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-
-type StylesProps = {
-  error?: boolean;
-};
+import { StylesProps } from "./types";
 
 export const Wrapper = styled.div`
   display: flex;

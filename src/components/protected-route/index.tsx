@@ -1,10 +1,7 @@
 import React, { FC } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
-
-type ProtectedRouteProps = {
-  children?: React.ReactNode;
-};
+import { ProtectedRouteProps } from "./types";
 
 const ProtectedRoute: FC = ({ children }: ProtectedRouteProps) => {
   const { user, loading }: any = useAuth();

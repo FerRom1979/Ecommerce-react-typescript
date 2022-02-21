@@ -61,6 +61,7 @@ export const WrapperHeader = styled.div<Props>`
     width: 100%;
     text-align: center;
     margin: 10px;
+    order: 6;
   }
   .wrapper-cart {
     display: ${({ showSearch }) => (showSearch ? "none" : "flex")};

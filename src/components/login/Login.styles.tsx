@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const WrapperForm = styled.div`
   display: flex;
+  max-width: 600px;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  margin: auto;
   h2 {
     text-align: center;
     font-weight: 300;

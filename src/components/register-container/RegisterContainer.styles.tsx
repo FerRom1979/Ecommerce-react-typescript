@@ -34,7 +34,8 @@ export const WrapperRegister = styled.div<StylesRegisterProps>`
     width: 90%;
   }
   @media (max-width: 790px) {
-    width: 90%;
+    width: max-content;
+    max-width: 700px;
     display: ${({ showSearch }) => (showSearch ? "none" : "")};
   }
 `;
