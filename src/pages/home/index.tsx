@@ -1,18 +1,18 @@
 import React from "react";
-import Header from "../../components/header";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Register from "../../components/register";
-import Login from "../../components/login";
+
+import SliderComponent from "../../components/slider";
+import { SLIDER_CARDS, SLIDER_ONE } from "../../constants/img-slider-one";
+import PromotionCard from "../../components/promotion-card/index";
+import Container from "../../components/container";
+import SliderCards from "../../components/slider-card";
 
 const Home = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <Container>
+      <SliderComponent imgSlider={SLIDER_ONE} />
+      <SliderCards dataCard={SLIDER_CARDS} />
+      <PromotionCard dataCard={SLIDER_CARDS} />
+    </Container>
   );
 };
 

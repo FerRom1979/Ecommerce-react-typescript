@@ -11,6 +11,6 @@ export const Content = styled.div`
     width: 90%;
   }
   @media (max-width: 790px) {
-    width: 90%;
+    width: 100%;
   }
 `;

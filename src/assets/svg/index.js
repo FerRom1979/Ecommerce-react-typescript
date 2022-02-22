@@ -4,6 +4,7 @@ import search from "./search.svg";
 import menu from "./menu-1.svg";
 import arrowRigth from "./arrow-64.svg";
 import password from "./password-10.svg";
+import card from "./card-5.svg";
 
 export { user5 };
 export { cart1 };
@@ -11,3 +12,4 @@ export { search };
 export { menu };
 export { arrowRigth };
 export { password };
+export { card };
