@@ -54,14 +54,16 @@ export const WrapperHeader = styled.div<Props>`
     background-color: transparent;
     cursor: pointer;
   }
-  h1 {
+  h1,
+  .title {
     font-size: 2rem;
     display: ${({ showSearch }) => (showSearch ? "none" : "")};
     order: 2;
     width: 100%;
     text-align: center;
     margin: 10px;
-    order: 6;
+    order: 2;
+    text-decoration: none;
   }
   .wrapper-cart {
     display: ${({ showSearch }) => (showSearch ? "none" : "flex")};
@@ -86,7 +88,8 @@ export const WrapperHeader = styled.div<Props>`
     cursor: pointer;
   }
   @media (min-width: 430px) {
-    h1 {
+    h1,
+    .title {
       order: 0;
       width: auto;
     }

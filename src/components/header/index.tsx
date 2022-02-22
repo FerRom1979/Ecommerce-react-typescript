@@ -27,7 +27,7 @@ const Header = () => {
               <img src={menu} alt="menu" />
             </button>
           </div>
-          <Link to={"/"} style={{ textDecoration: "none", order: 2 }}>
+          <Link to={"/"} className="title">
             <h1>Padel World Store</h1>
           </Link>
 
