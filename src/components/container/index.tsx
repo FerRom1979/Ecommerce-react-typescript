@@ -1,14 +1,9 @@
 import React, { FC } from "react";
+import { TContainer } from "./types";
 
 // styles
 import { Content } from "./Container.styles";
 
-type TContainer = {
-  children?: React.ReactNode;
-};
-
-const Container: FC = ({ children }: TContainer) => {
-  return <Content>{children}</Content>;
-};
+const Container: FC = ({ children }: TContainer) => <Content>{children}</Content>;
 
 export default Container;
