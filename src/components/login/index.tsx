@@ -5,13 +5,13 @@ import Container from "../container";
 import swal from "sweetalert";
 import { User } from "./types";
 import Input from "../form/input/Input";
-
-//styles
-import { WrapperForm } from "./Login.styles";
 import ButtonGoogle from "../button-google";
 import ButtonComponent from "../button";
 import { validateError } from "./validateForm";
 import Message from "../form/message";
+
+//styles
+import { WrapperForm } from "./Login.styles";
 
 const Login = () => {
   const { login }: any = useAuth();

@@ -5,6 +5,8 @@ import menu from "./menu-1.svg";
 import arrowRigth from "./arrow-64.svg";
 import password from "./password-10.svg";
 import card from "./card-5.svg";
+import currency from "./currency-1.svg";
+import delivery from "./delivery-1.svg";
 
 export { user5 };
 export { cart1 };
@@ -13,3 +15,5 @@ export { menu };
 export { arrowRigth };
 export { password };
 export { card };
+export { currency };
+export { delivery };

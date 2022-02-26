@@ -4,22 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Container from "../container";
 import { WrapperSlider, WrapperCard } from "./SliderCard.Styles";
-import { SLIDER_CARDS } from "../../constants/img-slider-one";
-import PromotionCard from "../../components/promotion-card/index";
 import { ICardProps } from "../promotion-card/types";
+import { SETTINGS } from "../../constants";
 
 const SliderCards = ({ dataCard }: ICardProps) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <Container>
       <WrapperSlider>
-        <Slider {...settings}>
+        <Slider {...SETTINGS}>
           {dataCard &&
             dataCard?.map((item) => {
               return (
