@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import { StylesProps } from "./types";
+import theme from "../../../config/theme";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ export const Wrapper = styled.div`
   input {
     min-height: 40px;
     padding: 7px;
-    border: 2px solid #1977f2;
+    border: 2px solid ${theme.firstColorLight};
     border-radius: 5px;
     font-size: 1rem;
     :focus {

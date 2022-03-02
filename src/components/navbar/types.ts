@@ -8,3 +8,9 @@ export type NavbarProps = {
 export type NavbarPropsStyles = {
   hideMenu?: boolean;
 };
+
+export type ShowMenuProps = {
+  paletas: boolean;
+  calzados: boolean;
+  accesorios: boolean;
+};

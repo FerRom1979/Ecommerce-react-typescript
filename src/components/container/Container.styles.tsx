@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import theme from "../../config/theme";
 
 export const Content = styled.div`
-  width: 1200px;
+  width: ${theme.maxWidth};
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 1200px) {

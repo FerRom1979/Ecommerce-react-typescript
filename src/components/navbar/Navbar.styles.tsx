@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavbarPropsStyles } from "./types";
 
 export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
+  z-index: 9999;
   width: 80%;
   background-color: #0095ff;
   position: fixed;
@@ -30,6 +31,7 @@ export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
   ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
   }
   li a {
     color: #fff;
@@ -43,15 +45,46 @@ export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
   }
   .open-close-sub-nav svg {
     fill: #fff;
-    background-color: gray;
+    background-color: #817d7d;
     padding: 4px;
   }
-  .menu-paddles {
-    display: none;
+  .sub-menu {
+    background-color: #348ecd;
   }
-  @media (max-width: 790px) {
-    .wrapper-register {
-      margin-left: -80%;
+  .sub-menu a {
+    padding-left: 30px;
+  }
+  @media (min-width: 790px) {
+    position: inherit;
+    background-color: transparent;
+    .ul-menu {
+      display: flex;
+    }
+    li a {
+      color: #000;
+    }
+    .sub-menu {
+      z-index: 2;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #817d7d;
+      border-radius: 10px #817d7d;
+      display: none;
+    }
+    li a:hover {
+      opacity: 0.7;
+    }
+    li a:hover ~ .sub-menu {
+      display: block;
+    }
+    .sub-menu:hover {
+      display: block;
+    }
+    .btn-close {
+      display: none;
+    }
+    img {
+      display: none;
     }
   }
 `;
