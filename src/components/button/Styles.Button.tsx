@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../config/theme";
 import { IStylesButtonProps } from "./types";
 
 export const Wrapper = styled.div<IStylesButtonProps>`
@@ -6,10 +7,10 @@ export const Wrapper = styled.div<IStylesButtonProps>`
   button {
     padding: 10px;
     cursor: pointer;
-    background-color: #1977f2;
+    background-color: ${theme.firstColor};
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: ${theme.white};
     font-weight: 600;
     font-size: 16px;
   }

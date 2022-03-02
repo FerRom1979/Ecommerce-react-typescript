@@ -1,11 +1,20 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import RegisterContainer from "../register-container";
-import { NavbarProps } from "./types";
+import { NavbarProps, ShowMenuProps } from "./types";
+import { arrowDown, arrowRigth } from "../../assets/svg";
+import useResize from "../../hooks/useResize";
 
 // styles
 import { WrapperNavbar } from "./Navbar.styles";
 
 const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
+  const { width } = useResize();
+  const [showMenu, setShowMenu] = useState<ShowMenuProps>({
+    paletas: false,
+    calzados: false,
+    accesorios: false,
+  });
+
   return (
     <WrapperNavbar hideMenu={hideMenu}>
       <div className="btn-close">
@@ -16,80 +25,96 @@ const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
           </svg>
         </button>
       </div>
-      <ul>
+      <ul className="ul-menu">
         <li>
-          <a href="//" className="open-close-sub-nav">
+          <a
+            href="//"
+            className="open-close-sub-nav"
+            onClick={() =>
+              setShowMenu({ paletas: !showMenu.paletas, calzados: false, accesorios: false })
+            }
+          >
             Paletas
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-            </svg>
+            {!showMenu?.paletas ? (
+              <img src={arrowDown} alt="arrow rigth" style={{ background: "grey" }} />
+            ) : (
+              <img src={arrowRigth} alt="arrow rigth" style={{ background: "grey" }} />
+            )}
           </a>
-          <ul className="menu-paddles">
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-          </ul>
+          {(showMenu?.paletas || width > 889) && (
+            <ul className="sub-menu">
+              <li>
+                <a href="//">Head</a>
+              </li>
+              <li>
+                <a href="//">Adidas</a>
+              </li>
+              <li>
+                <a href="//">BullPadel</a>
+              </li>
+              <li>
+                <a href="//">Vairo</a>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
-          <a href="//" className="open-close-sub-nav">
+          <a
+            href="//"
+            className="open-close-sub-nav"
+            onClick={() =>
+              setShowMenu({ paletas: false, calzados: !showMenu.calzados, accesorios: false })
+            }
+          >
             Calzados
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-            </svg>
+            {!showMenu?.calzados ? (
+              <img src={arrowDown} alt="arrow rigth" style={{ background: "grey" }} />
+            ) : (
+              <img src={arrowRigth} alt="arrow rigth" style={{ background: "grey" }} />
+            )}
           </a>
-          <ul>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-              <ul>
-                <li>
-                  <a href="//">items</a>
-                </li>
-                <li>
-                  <a href="//">items</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          {(showMenu?.calzados || width > 889) && (
+            <ul className="sub-menu">
+              <li>
+                <a href="//">Adidas</a>
+              </li>
+              <li>
+                <a href="//">Topper</a>
+              </li>
+              <li>
+                <a href="//">Balbolat</a>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
-          <a href="//" className="open-close-sub-nav">
+          <a
+            href="//"
+            className="open-close-sub-nav"
+            onClick={() =>
+              setShowMenu({ paletas: false, calzados: false, accesorios: !showMenu.accesorios })
+            }
+          >
             Accesorios
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-            </svg>
+            {!showMenu?.accesorios ? (
+              <img src={arrowDown} alt="arrow rigth" style={{ background: "grey" }} />
+            ) : (
+              <img src={arrowRigth} alt="arrow rigth" style={{ background: "grey" }} />
+            )}
           </a>
-          <ul>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-            <li>
-              <a href="//">items</a>
-            </li>
-          </ul>
+          {(showMenu?.accesorios || width > 889) && (
+            <ul className="sub-menu">
+              <li>
+                <a href="//">Ropa</a>
+              </li>
+              <li>
+                <a href="//">Bolsos</a>
+              </li>
+              <li>
+                <a href="//">Pelotas</a>
+              </li>
+            </ul>
+          )}
         </li>
       </ul>
     </WrapperNavbar>
