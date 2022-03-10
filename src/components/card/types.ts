@@ -6,3 +6,6 @@ export interface ICardProps {
   mark?: string;
   img?: string;
 }
+export interface IProductProps {
+  product?: any;
+}

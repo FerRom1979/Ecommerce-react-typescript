@@ -10,6 +10,7 @@ export const ContentCard = styled.div`
   & {
     .wrapper-img {
       width: 180px;
+      height: 180px;
       display: flex;
     }
     img {

@@ -7,15 +7,18 @@ import theme from "./config/theme";
 import { ThemeProvider } from "styled-components";
 import { AuthProvider } from "./context/authContext";
 import ManagementRoutes from "./components/manager-routes";
+import ProductsProvider from "./context/productContext";
 
 function App() {
   return (
-    <AuthProvider>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <ManagementRoutes />
-      </ThemeProvider>
-    </AuthProvider>
+    <ProductsProvider>
+      <AuthProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <ManagementRoutes />
+        </ThemeProvider>
+      </AuthProvider>
+    </ProductsProvider>
   );
 }
 
