@@ -7,6 +7,7 @@ import SliderComponent from "../../components/slider";
 import { SLIDER_ONE } from "../../constants/img-slider-one";
 import PromotionCard from "../../components/promotion-card/index";
 import Home from "../../pages/home";
+import ProductList from "../../pages/product-list";
 
 const ManagementRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const ManagementRoutes = () => {
         <Route path="/promotion-card" element={<PromotionCard />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/products" element={<ProductList />} />
       </Routes>
     </BrowserRouter>
   );
