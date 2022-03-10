@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import theme from "../../config/theme";
+import { IStylesCardProps } from "./types";
 
-export const ContentCard = styled.div`
+export const ContentCard = styled.div<IStylesCardProps>`
   width: 300px;
+  height: 330px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,7 +18,7 @@ export const ContentCard = styled.div`
     img {
       max-width: 100%;
       height: auto;
-      opacity: 0.4;
+      opacity: ${({ stock }) => (!stock ? "0.4" : "1")};
     }
     .price {
       color: ${theme.firstColor};
@@ -40,13 +42,18 @@ export const ContentCard = styled.div`
       padding: 5px;
       border-radius: 50%;
       display: flex;
+      justify-content: center;
       align-items: center;
-
       text-align: center;
       top: 20px;
       right: 20px;
-
       opacity: 1;
+    }
+    .off {
+      top: 85px;
+      right: 78px;
+      height: 57px;
+      min-width: 57px;
     }
     .stock {
       z-index: 2;
@@ -62,8 +69,22 @@ export const ContentCard = styled.div`
       color: ${theme.white};
     }
     p {
-      margin: 0 0 5px 0;
+      margin: 0;
       font-size: 14px;
+    }
+    .card-body {
+      display: grid;
+
+      grid-template-rows: minmax(30px, auto);
+      grid-auto-rows: auto;
+    }
+    .card-body div {
+      margin-bottom: 5px;
+
+      overflow: hidden;
+    }
+    .description {
+      height: 36px;
     }
   }
 `;

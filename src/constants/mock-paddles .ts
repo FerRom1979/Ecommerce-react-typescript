@@ -18,6 +18,7 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "https://d3ugyf2ht6aenh.cloudfront.net/stores/692/686/products/db05defb-df48-4b4e-a688-7ff2e0debbd1_nube-b675d769f37a0ad77415938110717461-1024-1024.jpg",
+    featured: true,
   },
   {
     mark: "puma",
@@ -39,6 +40,7 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "https://newsport.vteximg.com.br/arquivos/ids/8468695-455-588/K013-A.jpg?v=637629896473670000",
+    featured: false,
   },
   {
     mark: "adidas",
@@ -61,6 +63,7 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "https://d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-padel-adidas-pro-fibra-vidrio-paddle-38-mm-profesional1-93b6d429a61d57033a15713428194606-1024-1024.jpg",
+    featured: true,
   },
   {
     mark: "sane",
@@ -82,6 +85,7 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "http://d3ugyf2ht6aenh.cloudfront.net/stores/919/712/products/paleta_sane_impronta_11-95947fad0d4445087915458731914717-640-0.jpg",
+    featured: false,
   },
   {
     mark: "bullpadel",
@@ -103,6 +107,7 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "http://d3ugyf2ht6aenh.cloudfront.net/stores/278/672/products/1-bull-flow1-6fa85bc016c22339c516273327063435-640-0.jpg",
+    featured: true,
   },
   {
     mark: "bortom",
@@ -124,6 +129,7 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "https://d3ugyf2ht6aenh.cloudfront.net/stores/278/672/products/1-lyra1-e8f90951b721b76d7816273325867728-640-0.jpg",
+    featured: false,
   },
   {
     mark: "nox",
@@ -145,6 +151,7 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5k30WdZ6Kn8RmyQc548ihfn3zzYJ-SLVuA&usqp=CAU",
+    featured: true,
   },
   {
     mark: "sane",
@@ -166,5 +173,6 @@ export const paddles = [
     power: "8/10 ",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcw6GPPbO6gWt-ehCtuamLdx0CAlNl8WwoA&usqp=CAU",
+    featured: false,
   },
 ];

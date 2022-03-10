@@ -9,3 +9,6 @@ export interface ICardProps {
 export interface IProductProps {
   product?: any;
 }
+export interface IStylesCardProps {
+  stock?: boolean;
+}
