@@ -6,6 +6,8 @@ import PromotionCard from "../../components/promotion-card/index";
 import Container from "../../components/container";
 import SliderCards from "../../components/slider-card";
 import ProductList from "../product-list";
+import FeaturedProduct from "../../components/featured-product.tsx";
+import Banner from "../../components/banner";
 
 const Home = () => {
   return (
@@ -13,7 +15,12 @@ const Home = () => {
       <SliderComponent imgSlider={SLIDER_ONE} />
       <SliderCards dataCard={SLIDER_CARDS} />
       <PromotionCard dataCard={SLIDER_CARDS} />
-      <ProductList />
+      <FeaturedProduct />
+      <Banner
+        text="Elegí tu producto y recibilo en cualquier parte del país sin moverte de tu casa."
+        height={150}
+      />
+      {/* <ProductList /> */}
     </Container>
   );
 };
