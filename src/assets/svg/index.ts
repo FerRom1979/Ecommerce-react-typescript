@@ -8,6 +8,10 @@ import card from "./card-5.svg";
 import currency from "./currency-1.svg";
 import delivery from "./delivery-1.svg";
 import arrowDown from "./arrow-65.svg";
+import facebook from "./facebook-3.svg";
+import instagram from "./instagram-11.svg";
+import twitter from "./twitter-4.svg";
+import youtube from "./youtube-9.svg";
 
 export { user5 };
 export { cart1 };
@@ -19,3 +23,7 @@ export { card };
 export { currency };
 export { delivery };
 export { arrowDown };
+export { facebook };
+export { instagram };
+export { twitter };
+export { youtube };

@@ -7,4 +7,11 @@ export type Data = {
 
 export interface ICardProps {
   dataCard?: Data[];
+  hide?: boolean;
+  color?: string;
 }
+
+export type StylesPromotionCardProps = {
+  hide?: boolean;
+  color?: string;
+};
