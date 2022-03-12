@@ -39,7 +39,7 @@ export const paddles = [
     control: "9/10",
     power: "8/10 ",
     imagen:
-      "https://newsport.vteximg.com.br/arquivos/ids/8468695-455-588/K013-A.jpg?v=637629896473670000",
+      "https://d3ugyf2ht6aenh.cloudfront.net/stores/951/243/products/vairo-6-3-rebel-pro-padelmdqshop1-72acfb9dfa1e0edec715616849529348-480-0.png",
     featured: false,
   },
   {
