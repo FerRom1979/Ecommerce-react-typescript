@@ -6,6 +6,7 @@ import useResize from "../../hooks/useResize";
 
 // styles
 import { WrapperNavbar } from "./Navbar.styles";
+import LinkComponent from "../link/index";
 
 const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
   const { width } = useResize();
@@ -44,7 +45,10 @@ const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
           {(showMenu?.paletas || width > 889) && (
             <ul className="sub-menu">
               <li>
-                <a href="//">Head</a>
+                <LinkComponent routed="/products" text="Todas las paletas" />
+              </li>
+              <li>
+                <a href="//">Sane</a>
               </li>
               <li>
                 <a href="//">Adidas</a>
