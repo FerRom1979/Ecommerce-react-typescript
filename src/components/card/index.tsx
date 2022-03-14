@@ -6,8 +6,6 @@ import { calculateCredit } from "../../utils/calculate-credit";
 import { currency } from "../../assets/svg";
 
 const Card = ({ product = undefined }: IProductProps) => {
-  console.log(product);
-
   return (
     <ContentCard stock={product.stock}>
       {product && (
