@@ -5,8 +5,7 @@ import { GridContainer } from "./Styles.FeaturedProducts";
 
 const FeaturedProduct = () => {
   const { paddlesProducts }: any = useProducts();
-  const featured = paddlesProducts.filter((product: any) => product.featured === true);
-  console.log(featured);
+  const featured = paddlesProducts?.filter((product: any) => product.featured === true);
 
   return (
     <>

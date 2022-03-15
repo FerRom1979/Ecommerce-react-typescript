@@ -7,8 +7,12 @@ import useResize from "../../hooks/useResize";
 // styles
 import { WrapperNavbar } from "./Navbar.styles";
 import LinkComponent from "../link/index";
+import { useProducts } from "../../context/productContext";
+import { Link } from "react-router-dom";
+import ButtonComponent from "../button/index";
 
 const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
+  const { getProducts }: any = useProducts();
   const { width } = useResize();
   const [showMenu, setShowMenu] = useState<ShowMenuProps>({
     paletas: false,
@@ -45,19 +49,29 @@ const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
           {(showMenu?.paletas || width > 889) && (
             <ul className="sub-menu">
               <li>
-                <LinkComponent routed="/products" text="Todas las paletas" />
+                <ButtonComponent className="btn-link" onClick={() => getProducts("")}>
+                  <LinkComponent routed="/products" className="link" text="Todas las paletas" />
+                </ButtonComponent>
               </li>
               <li>
-                <a href="//">Sane</a>
+                <button className="btn-link" onClick={() => getProducts("sane")}>
+                  Sane
+                </button>
               </li>
               <li>
-                <a href="//">Adidas</a>
+                <ButtonComponent className="btn-link" onClick={() => getProducts("adidas")}>
+                  Adidas
+                </ButtonComponent>
               </li>
               <li>
-                <a href="//">BullPadel</a>
+                <ButtonComponent className="btn-link" onClick={() => getProducts("bullpadel")}>
+                  BullPadel
+                </ButtonComponent>
               </li>
               <li>
-                <a href="//">Vairo</a>
+                <ButtonComponent className="btn-link" onClick={() => getProducts("nox")}>
+                  Nox
+                </ButtonComponent>
               </li>
             </ul>
           )}
