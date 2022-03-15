@@ -54,6 +54,17 @@ export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
   .sub-menu a {
     padding-left: 30px;
   }
+  .sub-menu .btn-link {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  .btn-link a {
+    padding: 0;
+  }
   @media (min-width: 790px) {
     position: inherit;
     background-color: transparent;
@@ -85,6 +96,14 @@ export const WrapperNavbar = styled.nav<NavbarPropsStyles>`
     }
     img {
       display: none;
+    }
+    .sub-menu .btn-link {
+      background-color: transparent;
+      border: none;
+      color: #000;
+
+      padding: 5px 10px;
+      font-size: 16px;
     }
   }
 `;
