@@ -23,6 +23,7 @@
     "react-query": "^3.34.16",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-simple-star-rating": "^4.0.5",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",

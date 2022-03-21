@@ -9,6 +9,7 @@ export const ContentCard = styled.div<IStylesCardProps>`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
   & {
     .wrapper-img {
       width: 180px;

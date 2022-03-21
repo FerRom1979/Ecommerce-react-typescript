@@ -12,6 +12,7 @@ import facebook from "./facebook-3.svg";
 import instagram from "./instagram-11.svg";
 import twitter from "./twitter-4.svg";
 import youtube from "./youtube-9.svg";
+import favorite2 from "./favorite-2.svg";
 
 export { user5 };
 export { cart1 };
@@ -27,3 +28,4 @@ export { facebook };
 export { instagram };
 export { twitter };
 export { youtube };
+export { favorite2 };
