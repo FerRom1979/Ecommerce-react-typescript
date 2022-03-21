@@ -2,6 +2,7 @@ import { useQuery } from "react-query";
 
 const fetchProducts = async (nameProduct = "sane") => {
   let url = "http://localhost:4000/paddles";
+
   if (nameProduct) {
     url = `http://localhost:4000/paddles?mark=${nameProduct}`;
   }

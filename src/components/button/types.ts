@@ -5,8 +5,13 @@ export interface IButtonComponentProps {
   type?: "button" | "submit" | "reset" | undefined;
   className?: string;
   link?: boolean;
+  bgColor?: string;
+  color?: string;
+
   onClick?: () => void;
 }
 export interface IStylesButtonProps {
   link?: boolean;
+  bgColor?: string;
+  color?: string;
 }

@@ -7,10 +7,10 @@ export const Wrapper = styled.div<IStylesButtonProps>`
   button {
     padding: 10px;
     cursor: pointer;
-    background-color: ${theme.firstColor};
+    background-color: ${({ bgColor }) => bgColor || theme.firstColor};
     border: none;
     border-radius: 5px;
-    color: ${theme.white};
+    color: ${({ color }) => color || theme.white};
     font-weight: 600;
     font-size: 16px;
   }

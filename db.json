@@ -1,6 +1,7 @@
 {
   "paddles": [
     {
+      "id": 1,
       "mark": "vairo",
       "prise": 14799,
       "description": "Excelente equilibrio entre potencia y control",
@@ -18,9 +19,10 @@
       "control": "9/10",
       "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/692/686/products/db05defb-df48-4b4e-a688-7ff2e0debbd1_nube-b675d769f37a0ad77415938110717461-1024-1024.jpg",
-      "featured": true
+      "featured": false
     },
     {
+      "id": 2,
       "mark": "puma",
       "prise": 43799,
       "description": "Tipo de juego control/potencia.",
@@ -41,6 +43,7 @@
       "featured": false
     },
     {
+      "id": 3,
       "mark": "adidas",
       "prise": 61799,
       "description": " Tiene una distribución equidistante de tres en tres, mejorando la durabilidad de la pala.",
@@ -58,9 +61,10 @@
       "control": "9/10",
       "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-padel-adidas-pro-fibra-vidrio-paddle-38-mm-profesional1-93b6d429a61d57033a15713428194606-1024-1024.jpg",
-      "featured": true
+      "featured": false
     },
     {
+      "id": 4,
       "mark": "sane",
       "prise": 11799,
       "description": "Paleta Sane Impronta Polietileno",
@@ -81,6 +85,7 @@
       "featured": false
     },
     {
+      "id": 5,
       "mark": "bullpadel",
       "prise": 44999,
       "description": "PALETA DE PADEL BULLPADEL FLOW LIGHT",
@@ -98,9 +103,10 @@
       "control": "9/10",
       "power": "8/10 ",
       "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/278/672/products/1-bull-flow1-6fa85bc016c22339c516273327063435-640-0.jpg",
-      "featured": true
+      "featured": false
     },
     {
+      "id": 6,
       "mark": "bullpadel",
       "prise": 10099,
       "description": "PALETA DE PADEL BORTOM LYRA",
@@ -121,6 +127,7 @@
       "featured": false
     },
     {
+      "id": 7,
       "mark": "nox",
       "prise": 54699,
       "description": "Emotion World Padel Tour Edition 2021 ",
@@ -138,9 +145,10 @@
       "control": "9/10",
       "power": "8/10 ",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5k30WdZ6Kn8RmyQc548ihfn3zzYJ-SLVuA&usqp=CAU",
-      "featured": true
+      "featured": false
     },
     {
+      "id": 8,
       "mark": "sane",
       "prise": 11799,
       "description": "Paleta Sane Impronta Polietileno",
@@ -161,6 +169,7 @@
       "featured": false
     },
     {
+      "id": 9,
       "mark": "vairo",
       "prise": 14799,
       "description": "Excelente equilibrio entre potencia y control",
@@ -181,6 +190,7 @@
       "featured": true
     },
     {
+      "id": 10,
       "mark": "puma",
       "prise": 43799,
       "description": "Tipo de juego control/potencia.",
@@ -201,6 +211,7 @@
       "featured": false
     },
     {
+      "id": 11,
       "mark": "adidas",
       "prise": 61799,
       "description": " Tiene una distribución equidistante de tres en tres, mejorando la durabilidad de la pala.",
@@ -221,6 +232,7 @@
       "featured": true
     },
     {
+      "id": 12,
       "mark": "sane",
       "prise": 11799,
       "description": "Paleta Sane Impronta Polietileno",
@@ -241,6 +253,7 @@
       "featured": false
     },
     {
+      "id": 13,
       "mark": "bullpadel",
       "prise": 44999,
       "description": "PALETA DE PADEL BULLPADEL FLOW LIGHT",
@@ -261,6 +274,7 @@
       "featured": true
     },
     {
+      "id": 14,
       "mark": "bullpadel",
       "prise": 10099,
       "description": "PALETA DE PADEL BORTOM LYRA",
@@ -281,6 +295,7 @@
       "featured": false
     },
     {
+      "id": 15,
       "mark": "nox",
       "prise": 54699,
       "description": "Emotion World Padel Tour Edition 2021 ",
@@ -301,6 +316,7 @@
       "featured": true
     },
     {
+      "id": 16,
       "mark": "sane",
       "prise": 11799,
       "description": "Paleta Sane Impronta Polietileno",
