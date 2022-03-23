@@ -54,23 +54,23 @@ const NavBar: FC<NavbarProps> = ({ hideMenu, setHideMenu }) => {
                 </ButtonComponent>
               </li>
               <li>
-                <button className="btn-link" onClick={() => getProducts("sane")}>
-                  Sane
-                </button>
+                <ButtonComponent className="btn-link" onClick={() => getProducts("sane")}>
+                  <LinkComponent routed="/products" className="link" text="Sane" />
+                </ButtonComponent>
               </li>
               <li>
                 <ButtonComponent className="btn-link" onClick={() => getProducts("adidas")}>
-                  Adidas
+                  <LinkComponent routed="/products" className="link" text="Adidas" />
                 </ButtonComponent>
               </li>
               <li>
                 <ButtonComponent className="btn-link" onClick={() => getProducts("bullpadel")}>
-                  BullPadel
+                  <LinkComponent routed="/products" className="link" text="BullPadel" />
                 </ButtonComponent>
               </li>
               <li>
                 <ButtonComponent className="btn-link" onClick={() => getProducts("nox")}>
-                  Nox
+                  <LinkComponent routed="/products" className="link" text="Nox" />
                 </ButtonComponent>
               </li>
             </ul>

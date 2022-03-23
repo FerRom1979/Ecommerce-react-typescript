@@ -8,7 +8,7 @@ import LinkComponent from "../link";
 
 const Card = ({ product = undefined }: IProductProps) => {
   return (
-    <LinkComponent routed={`/products/${product.id}`}>
+    <LinkComponent routed={`/products/${product.id}`} style={{ textDecoration: "none" }}>
       <ContentCard stock={product.stock}>
         {product && (
           <>

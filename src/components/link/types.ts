@@ -5,4 +5,5 @@ export interface ILinkProps {
   text?: string;
   className?: string;
   children?: React.ReactNode;
+  style?: {};
 }

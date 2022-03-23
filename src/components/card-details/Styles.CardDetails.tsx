@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const WrapperCardDetails = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1fr);
   gap: 1em;
+  margin: 0 10px;
   & {
+    .item {
+    }
     .wrapper-img {
       width: 400px;
       margin-top: 24px;
@@ -15,20 +18,25 @@ export const WrapperCardDetails = styled.div`
     .wrapper-favorite {
       display: flex;
       justify-content: space-between;
+      width: 95%;
     }
+
     .product-new {
       font-size: 14px;
       color: rgba(0, 0, 0, 0.55);
     }
     .description h2 {
       flex: auto;
-      font-size: 22px;
+      font-size: 18px;
       margin-bottom: 8px;
       margin-right: 28px;
       padding: 0;
     }
     .wrapper-value {
       margin-top: 16px;
+    }
+    .wrapper-value > img {
+      width: 28px;
     }
     .value {
       font-size: 36px;
@@ -75,6 +83,14 @@ export const WrapperCardDetails = styled.div`
       padding: 25px 16px;
       border-radius: 8px;
       font-size: 14px;
+    }
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+    && {
+      .description h2 {
+        font-size: 22px;
+      }
     }
   }
 `;
