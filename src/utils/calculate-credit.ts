@@ -1,5 +1,5 @@
 export const calculateCredit = (prise: number) => {
-  const share = prise / 12;
+  const share: number = prise / 12;
 
   return share.toFixed(2);
 };

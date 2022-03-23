@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { currency, favorite2 } from "../../assets/svg";
+import { currencyBlack, favorite2 } from "../../assets/svg";
 import { useProductId } from "../../hooks/useProductID";
 import { Rating } from "react-simple-star-rating";
 
 import Container from "../container";
 import { WrapperCardDetails } from "./Styles.CardDetails";
 import ButtonComponent from "../button/index";
+import { separatedCommas } from "../../utils/separated-with-commas";
+import { calculateCredit } from "../../utils/calculate-credit";
+import Loader from "../loader";
 
 const CardDetails = () => {
   const [rating, setRating] = useState(0);
@@ -16,18 +19,20 @@ const CardDetails = () => {
   const handleRating = (rate: number) => {
     setRating(rate);
   };
+
   if (isLoading) {
-    return <h2>Loadinng.....</h2>;
+    return <Loader />;
   }
+
   return (
     <Container>
       <WrapperCardDetails>
-        <div>
+        <div className="item">
           <div className="wrapper-img">
             <img src={data?.imagen} alt="details" className="img" />
           </div>
         </div>
-        <div>
+        <div className="item">
           <div className="wrapper-favorite">
             <span className="product-new">nuevo | 43 vendidos</span>
             <img src={favorite2} alt="favorite" className="favorite2" />
@@ -47,48 +52,31 @@ const CardDetails = () => {
             />
           </div>
           <div className="wrapper-value">
-            <img src={currency} alt="currency" />
-            <span className="value">{data?.prise}</span>
+            <img src={currencyBlack} alt="currency" />
+            <span className="value">{separatedCommas(data?.prise)}</span>
           </div>
           <div className="debts">
             <span>en 12x </span>
-            <img src={currency} alt="currency" />
-            <span> {data?.prise}</span>
+
+            <img src={currencyBlack} alt="currency" />
+            <span> {calculateCredit(data?.prise)} </span>
           </div>
           <div className="info-product">
             <h4>Lo que tenes que saber del producto</h4>
             <ul>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.balance)}: {data?.balance}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.control)}: {data?.control}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.frame)}: {data?.frame}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.model)}: {data?.model}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.nucleus)}: {data?.nucleus}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.origin)}: {data?.origin}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.power)}: {data?.power}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.shape)}: {data?.shape}
-              </li>
-              <li>
-                {Object.keys(data).find((key) => data[key] === data?.weight)}: {data?.weight}
-              </li>
+              {data?.infoProduct &&
+                data?.infoProduct.map((info: any, index: number) => {
+                  return (
+                    <li key={index}>
+                      {Object.keys(info).find((key) => key)}:{" "}
+                      {Object.values(info).find((value) => value)}
+                    </li>
+                  );
+                })}
             </ul>
           </div>
         </div>
-        <div className="wrapper-shipments">
+        <div className="wrapper-shipments item">
           <div>
             <h4>Llega gratis hoy</h4>
             <p>comprando dentro de los proximos</p>

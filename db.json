@@ -8,18 +8,22 @@
       "stock": false,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta Padel Paddle Vairo 7.3 + Regalos",
-      "model": "7.3",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Foam",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/692/686/products/db05defb-df48-4b4e-a688-7ff2e0debbd1_nube-b675d769f37a0ad77415938110717461-1024-1024.jpg",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        {
+          "balance": "Medium-High",
+          "control": "9/10",
+          "frame": "Fiberglass - 38 millimeters",
+          "model": "7.3",
+          "nucleus": "Foam",
+          "origin": "national",
+          "power": "8/10 ",
+          "shape": "tear",
+          "weight": "380/385 Grams"
+        }
+      ]
     },
     {
       "id": 2,
@@ -29,18 +33,22 @@
       "stock": true,
       "off": 20,
       "shipments": false,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "kelme",
-      "origin": "importada",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/951/243/products/vairo-6-3-rebel-pro-padelmdqshop1-72acfb9dfa1e0edec715616849529348-480-0.png",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        {
+          "balance": "Medium-High",
+          "control": "9/10",
+          "frame": "Fiberglass - 38 millimeters",
+          "model": "7.3",
+          "nucleus": "Foam",
+          "origin": "national",
+          "power": "8/10 ",
+          "shape": "tear",
+          "weight": "380/385 Grams"
+        }
+      ]
     },
     {
       "id": 3,
@@ -50,18 +58,22 @@
       "stock": true,
       "off": 5,
       "shipments": true,
-      "shape": "circular",
       "descriptionPaddle": "Carbono Marco: dota a esta pala de la rigidez necesaria en el juego. Las fibras de la superficie, dotan a esta pala de un gran confort y - excelente potencia",
-      "model": "PRECISION PRO ",
-      "origin": "importada",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Eva Soft",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-padel-adidas-pro-fibra-vidrio-paddle-38-mm-profesional1-93b6d429a61d57033a15713428194606-1024-1024.jpg",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        {
+          "balance": "Medium-High",
+          "control": "9/10",
+          "frame": "Fiberglass - 38 millimeters",
+          "model": "7.3",
+          "nucleus": "Foam",
+          "origin": "national",
+          "power": "8/10 ",
+          "shape": "tear",
+          "weight": "380/385 Grams"
+        }
+      ]
     },
     {
       "id": 4,
@@ -71,18 +83,22 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "imprint",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/919/712/products/paleta_sane_impronta_11-95947fad0d4445087915458731914717-640-0.jpg",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        {
+          "balance": "Medium-High",
+          "control": "9/10",
+          "frame": "Fiberglass - 38 millimeters",
+          "model": "7.3",
+          "nucleus": "Foam",
+          "origin": "national",
+          "power": "8/10 ",
+          "shape": "tear",
+          "weight": "380/385 Grams"
+        }
+      ]
     },
     {
       "id": 5,
@@ -92,18 +108,22 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "flow light",
-      "origin": "importada",
-      "weight": "380/385 Grams",
-      "frame": "38 millimeters",
-      "nucleus": "Eva suave POLIGLASS ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/278/672/products/1-bull-flow1-6fa85bc016c22339c516273327063435-640-0.jpg",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        {
+          "balance": "Medium-High",
+          "control": "9/10",
+          "frame": "Fiberglass - 38 millimeters",
+          "model": "7.3",
+          "nucleus": "Foam",
+          "origin": "national",
+          "power": "8/10 ",
+          "shape": "tear",
+          "weight": "380/385 Grams"
+        }
+      ]
     },
     {
       "id": 6,
@@ -113,18 +133,22 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "lyra",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/278/672/products/1-lyra1-e8f90951b721b76d7816273325867728-640-0.jpg",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        {
+          "balance": "Medium-High",
+          "control": "9/10",
+          "frame": "Fiberglass - 38 millimeters",
+          "model": "7.3",
+          "nucleus": "Foam",
+          "origin": "national",
+          "power": "8/10 ",
+          "shape": "tear",
+          "weight": "380/385 Grams"
+        }
+      ]
     },
     {
       "id": 7,
@@ -134,18 +158,22 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "circular",
       "descriptionPaddle": "La Emotion World Padel Tour Edition 2021 es una paleta de pádel que se destaca por su molde redondo que proporciona un amplísimo punto dulce. Incorpora rugosidad en las caras que te ayudará a dar mayores efectos.",
-      "model": "imprint",
-      "origin": "importada",
-      "weight": "363/365 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "eva HR3 ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5k30WdZ6Kn8RmyQc548ihfn3zzYJ-SLVuA&usqp=CAU",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        {
+          "balance": "Medium-High",
+          "control": "9/10",
+          "frame": "Fiberglass - 38 millimeters",
+          "model": "7.3",
+          "nucleus": "Foam",
+          "origin": "national",
+          "power": "8/10 ",
+          "shape": "tear",
+          "weight": "380/385 Grams"
+        }
+      ]
     },
     {
       "id": 8,
@@ -155,18 +183,20 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "imprint",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcw6GPPbO6gWt-ehCtuamLdx0CAlNl8WwoA&usqp=CAU",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 9,
@@ -176,18 +206,20 @@
       "stock": false,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta Padel Paddle Vairo 7.3 + Regalos",
-      "model": "7.3",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Foam",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/692/686/products/db05defb-df48-4b4e-a688-7ff2e0debbd1_nube-b675d769f37a0ad77415938110717461-1024-1024.jpg",
-      "featured": true
+      "featured": true,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 10,
@@ -197,18 +229,20 @@
       "stock": true,
       "off": 20,
       "shipments": false,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "kelme",
-      "origin": "importada",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/951/243/products/vairo-6-3-rebel-pro-padelmdqshop1-72acfb9dfa1e0edec715616849529348-480-0.png",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 11,
@@ -218,18 +252,20 @@
       "stock": true,
       "off": 5,
       "shipments": true,
-      "shape": "circular",
       "descriptionPaddle": "Carbono Marco: dota a esta pala de la rigidez necesaria en el juego. Las fibras de la superficie, dotan a esta pala de un gran confort y - excelente potencia",
-      "model": "PRECISION PRO ",
-      "origin": "importada",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Eva Soft",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/069/005/products/paleta-padel-adidas-pro-fibra-vidrio-paddle-38-mm-profesional1-93b6d429a61d57033a15713428194606-1024-1024.jpg",
-      "featured": true
+      "featured": true,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 12,
@@ -239,18 +275,20 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "imprint",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/919/712/products/paleta_sane_impronta_11-95947fad0d4445087915458731914717-640-0.jpg",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 13,
@@ -260,18 +298,20 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "flow light",
-      "origin": "importada",
-      "weight": "380/385 Grams",
-      "frame": "38 millimeters",
-      "nucleus": "Eva suave POLIGLASS ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "http://d3ugyf2ht6aenh.cloudfront.net/stores/278/672/products/1-bull-flow1-6fa85bc016c22339c516273327063435-640-0.jpg",
-      "featured": true
+      "featured": true,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 14,
@@ -281,18 +321,20 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "lyra",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/278/672/products/1-lyra1-e8f90951b721b76d7816273325867728-640-0.jpg",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 15,
@@ -302,18 +344,20 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "circular",
       "descriptionPaddle": "La Emotion World Padel Tour Edition 2021 es una paleta de pádel que se destaca por su molde redondo que proporciona un amplísimo punto dulce. Incorpora rugosidad en las caras que te ayudará a dar mayores efectos.",
-      "model": "imprint",
-      "origin": "importada",
-      "weight": "363/365 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "eva HR3 ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5k30WdZ6Kn8RmyQc548ihfn3zzYJ-SLVuA&usqp=CAU",
-      "featured": true
+      "featured": true,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
     },
     {
       "id": 16,
@@ -323,18 +367,142 @@
       "stock": true,
       "off": 13,
       "shipments": true,
-      "shape": "tear",
       "descriptionPaddle": "Paleta de de pádel con forma de lágrima, balance medio-alto, siendo el control su punto fuerte.",
-      "model": "imprint",
-      "origin": "national",
-      "weight": "380/385 Grams",
-      "frame": "Fiberglass - 38 millimeters",
-      "nucleus": "Compressed Polyethylene ",
-      "balance": "Medium-High",
-      "control": "9/10",
-      "power": "8/10 ",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcw6GPPbO6gWt-ehCtuamLdx0CAlNl8WwoA&usqp=CAU",
-      "featured": false
+      "featured": false,
+      "infoProduct": [
+        { "balance": "Medium-High" },
+        { "control": "9/10" },
+        { "frame": "Fiberglass - 38 millimeters" },
+        { "model": "7.3" },
+        { "nucleus": "Foam" },
+        { "origin": "national" },
+        { "power": "8/10 " },
+        { "shape": "tear" },
+        { "weight": "380/385 Grams" }
+      ]
+    }
+  ],
+  "zapatillas": [
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_692657-MLA47963573918_102021-F.webp",
+      "mark": "fila",
+      "description": "Zapatillas Fila Axilus Ace Tenis Hombre",
+      "Price": 15490,
+      "stock": true,
+      "featured": false,
+      "shipments": true,
+      "off": 10
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_718392-MLA45596170735_042021-O.webp",
+      "mark": "fila",
+      "description": "Zapatilla Fila Lugano 5.0",
+      "Price": 8490,
+      "stock": true,
+      "featured": false,
+      "shipments": true,
+      "off": 5
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_896572-MLA46641414269_072021-O.webp",
+      "mark": "adidas",
+      "description": "Zapatillas adidas Ubersonic Tenis Junior Chicos Niño Olivos",
+      "Price": 18490,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 15
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_620322-MLA47605570808_092021-O.webp",
+      "mark": "adidas",
+      "description": "Zapatillas adidas Court Control M Tenis Padel - Olivos",
+      "Price": 19490,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 15
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_827502-MLA47381679455_092021-O.webp",
+      "mark": "wilson",
+      "description": "Zapatillas Wilson Ace Plus All Court Tenis Padel",
+      "Price": 16990,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 15
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_641897-MLA47381596557_092021-O.webp",
+      "mark": "wilson",
+      "description": "Zapatillas Wilson Slice All Court Tenis Padel",
+      "Price": 18990,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 15
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_603914-MLA47381841097_092021-O.webp",
+      "mark": "wilson",
+      "description": "Zapatillas Wilson Slice All Court Tenis Padel",
+      "Price": 15990,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 15
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_892531-MLA49244841806_032022-F.webp",
+      "mark": "balbolat",
+      "description": "Zapatillas Babolat Premura 43 Padel Lebron Leer ",
+      "Price": 32000,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 25
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_991413-MLA31604413316_072019-O.webp",
+      "mark": "balbolat",
+      "description": "Zapatilla Babolat Propulse Blast All Court Diva Tenis Padel",
+      "Price": 50000,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 25
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_798575-MLA46877239363_072021-O.webp",
+      "mark": "balbolat",
+      "description": "Zapatillas Babolat Drive 3 All Court - Tenis Padel Mujer",
+      "Price": 27900,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 25
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_707127-MLA48736570084_012022-O.webp",
+      "mark": "nox",
+      "description": "Zapatillas Nox At10 Lux Tapia Tenis Padel Hombre ",
+      "Price": 37900,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 25
+    },
+    {
+      "image": "https://http2.mlstatic.com/D_NQ_NP_706967-MLA48752749076_012022-O.webp",
+      "mark": "nox",
+      "description": "Zapatillas Padel Hombre Nox At10 Tapia Lux Alta Gama",
+      "Price": 27900,
+      "stock": false,
+      "featured": false,
+      "shipments": true,
+      "off": 25
     }
   ]
 }

@@ -24,7 +24,6 @@ const Home = () => {
           color="#0095ff"
           hide
         />
-        {/* <ProductList /> */}
       </Container>
 
       <Footer dataCard={SLIDER_CARDS} />

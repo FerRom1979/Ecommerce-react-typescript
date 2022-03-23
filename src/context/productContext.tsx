@@ -21,11 +21,11 @@ export const ProductsProvider = ({ children }: IProductsContextProps) => {
   const [nameProduct, setNameProduct] = useState<string>("");
 
   const onSuccess = (data: any) => {
-    console.log("Perform side effect after data fetching", data);
+    // console.log("Perform side effect after data fetching", data);
   };
 
   const onError = (error: any) => {
-    console.log("Perform side effect after encountering error", error);
+    // console.log("Perform side effect after encountering error", error);
   };
 
   const getProducts = (product: string) => {
